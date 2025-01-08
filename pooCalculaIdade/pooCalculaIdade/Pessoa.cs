@@ -42,7 +42,7 @@ namespace pooCalculaIdade
 		{
 			Console.WriteLine("Nome: " + this.nome);
 			Console.WriteLine("Ano de Nascimento: " + this.anoNascimento);
-            Console.WriteLine("Idade: " + this.Idade);
+            		Console.WriteLine("Idade: " + this.Idade);
 		}
 		private void CalcularIdade()
 		{
