@@ -13,8 +13,7 @@ namespace Pokedex
 				this.Nome = nomePokemon;
 				this.Descricao = descPokemon;
 			}
-		
-		
+
 		private String nome;
 
 		public String Nome
