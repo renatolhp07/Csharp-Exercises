@@ -8,6 +8,13 @@ namespace Pokedex
 {
     public class Pokemon
     {
+		public Pokemon(String nomePokemon, String descPokemon)
+			{
+				this.Nome = nomePokemon;
+				this.Descricao = descPokemon;
+			}
+		
+		
 		private String nome;
 
 		public String Nome

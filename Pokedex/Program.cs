@@ -13,12 +13,10 @@ namespace Pokedex
             Console.WriteLine("Pokédex - Sua enciclopédia Pokémon\n=========================================");
             Console.WriteLine("Digite o nome do Pokémon: ");
             String nome = Console.ReadLine();
-            Console.WriteLine("\nDigite o nome do Pokémon: ");
+            Console.WriteLine("\nDigite o tipo do Pokémon: ");
             String descricao = Console.ReadLine();
 
-            Pokemon p = new Pokemon();
-            p.Nome = nome;
-            p.Descricao = descricao;
+            Pokemon p = new Pokemon(nome, descricao);
 
             p.ExibirDados();
         }
