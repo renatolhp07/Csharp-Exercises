@@ -62,7 +62,7 @@ namespace ControleDeAnimais
             Console.WriteLine("\nA quantidade de cachorros é: " + t1);
             Console.WriteLine("A quantidade de gatos é: " + t2);
             Console.WriteLine("A quantidade de peixes é: " + t3);
-            Console.ReadKey(); 
+            Console.ReadKey();
         }
     }
 }
