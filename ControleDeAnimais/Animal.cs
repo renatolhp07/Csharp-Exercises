@@ -6,30 +6,34 @@ using System.Threading.Tasks;
 
 namespace ControleDeAnimais
 {
+	//Cria o tipo de dados enum
+	public enum TipoAnimal {Cachorro, Gato, Peixe};
     public class Animal
     {
-		private String nome;
+        public Animal()
+        {
+			this.Nome = "";
+			this.Tipo = TipoAnimal.Peixe;
+        }
+
+        public Animal(String nome, TipoAnimal tipo)
+        {
+			this.Nome = nome;
+			this.Tipo = tipo;
+        }
+        private String nome;
 
 		public String Nome
 		{
 			get { return nome; }
 			set { nome = value.ToUpper(); }
 		}
-		private String tipo;
+		private TipoAnimal tipo;
 
-		public String Tipo
+		public TipoAnimal Tipo
 		{//Valores definidos pelo dev: Gato, Cachorro e Peixe
 			get { return tipo; }
-			set { 
-				if (value == "Cachorro" || value == "Gato" || value == "Peixe")
-				{
-                    tipo = value;
-				}
-				else {
-					tipo = "Peixe";				
-				}
-				 
-			}
+			set { tipo = value; }
 		}
 	}
 }
