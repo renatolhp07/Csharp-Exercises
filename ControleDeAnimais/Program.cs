@@ -16,6 +16,8 @@ namespace ControleDeAnimais
             //Animal a4 = new Animal();
             //Animal a5= new Animal();
             int t1 = 0, t2 =0, t3 = 0;
+            int tL = 0;
+            Animal[] animais = new Animal[20];
             int tipoAnimal = 0;
 
             Console.WriteLine("Controle de Animais");
